@@ -77,7 +77,7 @@ var seckill = {
                 //时间格式
                 var format = event.strftime('秒杀倒计时：%D天 %H时 %M分 %S秒');
                 seckillBox.html(format);
-            }).on('fiish.countdown',function () {
+            }).on('finish.countdown',function () {
                 seckill.handleSeckillKill(seckillId,seckillBox);
             });
         }else{
